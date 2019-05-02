@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [eCommerce]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Mobile(failed)">
+    <classes>
+      <class name="com.guru99.model.tests.MobilePageTests">
+        <methods>
+          <include name="verifyComparingTwoProductsTest"/>
+          <include name="startUpTest"/>
+          <include name="shutDownTest"/>
+        </methods>
+      </class> <!-- com.guru99.model.tests.MobilePageTests -->
+    </classes>
+  </test> <!-- Mobile(failed) -->
+</suite> <!-- Failed suite [eCommerce] -->
