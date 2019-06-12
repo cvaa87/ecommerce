@@ -31,5 +31,9 @@ public class BasePage {
 	{
 		driver.findElement(By.cssSelector("li.level0.nav-2.last a")).click();
 	}
+	public void clickAdvanceSearchLink()
+	{
+		driver.findElement(By.xpath("//div[@class='footer']/div[3]/ul/li[3]/a")).click();
+	}
 
 }

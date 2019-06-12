@@ -7,7 +7,9 @@ import org.testng.annotations.Test;
 import com.guru99.model.devices.CompareDeviceName;
 import com.guru99.model.pages.AccountDashboardPage;
 import com.guru99.model.pages.AccountLoginPage;
+import com.guru99.model.pages.AdvancedSearchPage;
 import com.guru99.model.pages.BasePage;
+import com.guru99.model.pages.CatalogAdvancedSearchResultsPage;
 import com.guru99.model.pages.CreateAccountPage;
 import com.guru99.model.pages.MobilePage;
 import com.guru99.model.pages.MyWishListPage;
@@ -24,7 +26,7 @@ public class HomePageTest extends BaseTest {
 		MobilePage mP = new MobilePage(driver);
 		assertEquals("Mobile", mP.getTitle());
 	}
-    @Test
+    @Test(enabled = false)
     public void registerForAnAccountTest()
     {
     	BasePage bP = new BasePage(driver);
@@ -49,9 +51,26 @@ public class HomePageTest extends BaseTest {
 		ShareWishListPage sWLP = new ShareWishListPage(driver);
 		sWLP.setEmail("cvaa87@gmail.com");
 		sWLP.setMessage("This is a test");
-		sWLP.clickShareWishList();
-		
+		sWLP.clickShareWishList();	 	
     	
+    }
+    
+    @Test
+    public void verifyAdvanceSearch()
+    {
+    	BasePage bP = new BasePage(driver);
+    	bP.clickAdvanceSearchLink();
+    	AdvancedSearchPage aSP = new AdvancedSearchPage(driver);
+    	aSP.setPriceRange("0", "150");
+    	aSP.clickSearchButton();
+    	CatalogAdvancedSearchResultsPage cASRP = new CatalogAdvancedSearchResultsPage(driver);
+    	System.out.println(cASRP.getProductTitles());
+    	System.out.println(cASRP.getProductPrices());
+    	driver.navigate().back();
+    	aSP.setPriceRange("151", "1000");
+    	aSP.clickSearchButton();
+    	System.out.println(cASRP.getProductTitles());
+    	System.out.println(cASRP.getProductPrices());
     	
     }
 }

@@ -1,0 +1,200 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 13,
+        "name": "Creating an account scenario",
+        "description": "",
+        "id": "account-registration-feature;creating-an-account-scenario;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 8186179456,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Landingpage",
+            "match": {
+              "location": "StepDefinition.user_is_on_Landingpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1476619014,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks Create Account link",
+            "match": {
+              "location": "StepDefinition.user_clicks_Create_Account_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 487659123,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"Malar\", \"Kusthi\", \"test10100@mailinator.com\" and \"qwerty01\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Malar",
+                  "offset": 13
+                },
+                {
+                  "val": "Kusthi",
+                  "offset": 22
+                },
+                {
+                  "val": "test10100@mailinator.com",
+                  "offset": 32
+                },
+                {
+                  "val": "qwerty01",
+                  "offset": 63
+                }
+              ],
+              "location": "StepDefinition.user_enters_and(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1261565136,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks Register button",
+            "match": {
+              "location": "StepDefinition.user_clicks_Register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40442390,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Registeration Success message is displayed",
+            "match": {
+              "location": "StepDefinition.registeration_Success_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 14,
+        "name": "Creating an account scenario",
+        "description": "",
+        "id": "account-registration-feature;creating-an-account-scenario;;3",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 6426829591,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user is on Landingpage",
+            "match": {
+              "location": "StepDefinition.user_is_on_Landingpage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1417466321,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks Create Account link",
+            "match": {
+              "location": "StepDefinition.user_clicks_Create_Account_link()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 449966659,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters \"Valli\", \"Pandi\", \"test10200@mailinator.com\" and \"qwerty02\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Valli",
+                  "offset": 13
+                },
+                {
+                  "val": "Pandi",
+                  "offset": 22
+                },
+                {
+                  "val": "test10200@mailinator.com",
+                  "offset": 31
+                },
+                {
+                  "val": "qwerty02",
+                  "offset": 62
+                }
+              ],
+              "location": "StepDefinition.user_enters_and(String,String,String,String)"
+            },
+            "matchedColumns": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1145438398,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks Register button",
+            "match": {
+              "location": "StepDefinition.user_clicks_Register_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 40704431,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "Registeration Success message is displayed",
+            "match": {
+              "location": "StepDefinition.registeration_Success_message_is_displayed()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Account registration feature",
+    "description": "",
+    "id": "account-registration-feature",
+    "keyword": "Feature",
+    "uri": "AccountRegistration.feature"
+  }
+]

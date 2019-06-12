@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="20.93287">
+    <testcase classname="Account registration feature" name="Creating an account scenario" time="11.452465">
+        <system-out>
+            <![CDATA[Given user is on Landingpage................................................passed
+And user clicks Create Account link.........................................passed
+And user enters "Malar", "Kusthi", "test10100@mailinator.com" and "qwerty01".passed
+When user clicks Register button............................................passed
+Then Registeration Success message is displayed.............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Account registration feature" name="Creating an account scenario 2" time="9.480405">
+        <system-out>
+            <![CDATA[Given user is on Landingpage................................................passed
+And user clicks Create Account link.........................................passed
+And user enters "Valli", "Pandi", "test10200@mailinator.com" and "qwerty02".passed
+When user clicks Register button............................................passed
+Then Registeration Success message is displayed.............................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
